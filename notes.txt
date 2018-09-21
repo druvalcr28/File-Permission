@@ -1,0 +1,6 @@
+The os.stat call can be somewhat costly, so make sure to extract all info you care about with a 
+single call, rather than keep repeating calls for each bit of interest.
+
+The read bit allows the affected user to list the files within the directory
+The write bit allows the affected user to create, rename, or delete files within the directory, and modify the directory's attributes
+The execute bit allows the affected user to enter the directory, and access files and directories inside
